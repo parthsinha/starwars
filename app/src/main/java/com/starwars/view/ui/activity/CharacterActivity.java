@@ -28,11 +28,11 @@ public class CharacterActivity extends BaseActivity implements AdapterCharacter.
     private AppLoadingDialog progressDialog;
     private static String TAG = "CharacterActivity";
 
-
     private static final int PER_PAGE_SIZE = 10;
     private int previousTotal = 0;
     private boolean loading = false;
     private int pageNo = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
