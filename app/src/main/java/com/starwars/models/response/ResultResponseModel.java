@@ -1,4 +1,3 @@
-
 package com.starwars.models.response;
 
 import android.arch.persistence.room.Entity;

@@ -21,6 +21,21 @@ public class DateUtil {
         return dateUtil;
     }
 
+    @BindingAdapter({"bind:dateConvertor"})
+    public static void getDateDesiredFormat(TextView textView, String date) {
+        String reformattedDate = "";
+
+        SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        SimpleDateFormat myFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+        try {
+            reformattedDate = myFormat.format(fromUser.parse(date));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        textView.setText("Created at : " + reformattedDate);
+    }
+
     public String getCurrentTimeStamp() {
         SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         Date now = new Date();
@@ -44,21 +59,6 @@ public class DateUtil {
 
     public CharSequence getFormattedDate(int day, int month, int year) {
         return new StringBuilder().append(String.format(Locale.getDefault(), "%02d", month + 1)).append("/").append(String.format(Locale.getDefault(), "%02d", day)).append("/").append(year);
-    }
-
-    @BindingAdapter({"bind:dateConvertor"})
-    public static void getDateDesiredFormat(TextView textView, String date) {
-        String reformattedDate = "";
-
-        SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        SimpleDateFormat myFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-
-        try {
-            reformattedDate = myFormat.format(fromUser.parse(date));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        textView.setText("Created at : " + reformattedDate);
     }
 
     public String getDateDesiredFormat2(String date) {

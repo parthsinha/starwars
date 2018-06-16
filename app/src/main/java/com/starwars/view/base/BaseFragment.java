@@ -13,6 +13,8 @@ import com.starwars.view.ui.activity.CharacterActivity;
 
 public class BaseFragment extends Fragment {
     protected CharacterActivity mActivity;
+    @Nullable
+    private ViewLifecycleOwner viewLifecycleOwner;
 
     @Override
     public void onAttach(Context context) {
@@ -21,18 +23,6 @@ public class BaseFragment extends Fragment {
             mActivity = (CharacterActivity) context;
         }
     }
-
-    static class ViewLifecycleOwner implements LifecycleOwner {
-        private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
-
-        @Override
-        public LifecycleRegistry getLifecycle() {
-            return lifecycleRegistry;
-        }
-    }
-
-    @Nullable
-    private ViewLifecycleOwner viewLifecycleOwner;
 
     /**
      * @return the Lifecycle owner of the current view hierarchy,
@@ -89,5 +79,14 @@ public class BaseFragment extends Fragment {
             viewLifecycleOwner = null;
         }
         super.onDestroyView();
+    }
+
+    static class ViewLifecycleOwner implements LifecycleOwner {
+        private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
+
+        @Override
+        public LifecycleRegistry getLifecycle() {
+            return lifecycleRegistry;
+        }
     }
 }

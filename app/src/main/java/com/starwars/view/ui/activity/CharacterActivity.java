@@ -22,32 +22,15 @@ import java.util.List;
 
 public class CharacterActivity extends BaseActivity implements AdapterCharacter.CharacterOnClick {
 
+    private static final int PER_PAGE_SIZE = 10;
+    private static String TAG = "CharacterActivity";
     private ActivityMainBinding binding;
     private AdapterCharacter adapterCharacter;
     private CharacterViewModel characterViewModel;
     private AppLoadingDialog progressDialog;
-    private static String TAG = "CharacterActivity";
-
-    private static final int PER_PAGE_SIZE = 10;
     private int previousTotal = 0;
     private boolean loading = false;
     private int pageNo = 1;
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        initUI();
-        binding.rvCharacter.addOnScrollListener(recyclerViewOnScrollListener);
-
-    }
-
-    private void initUI() {
-        StarWarsApplication.getInstance().setForegroundActivity(this);
-        serviceCall();
-    }
-
     private RecyclerView.OnScrollListener recyclerViewOnScrollListener = new RecyclerView.OnScrollListener() {
         @Override
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -76,6 +59,20 @@ public class CharacterActivity extends BaseActivity implements AdapterCharacter.
             }
         }
     };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        initUI();
+        binding.rvCharacter.addOnScrollListener(recyclerViewOnScrollListener);
+
+    }
+
+    private void initUI() {
+        StarWarsApplication.getInstance().setForegroundActivity(this);
+        serviceCall();
+    }
 
     private void serviceCall() {
         startProgress();

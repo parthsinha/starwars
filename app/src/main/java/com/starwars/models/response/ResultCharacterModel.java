@@ -1,4 +1,3 @@
-
 package com.starwars.models.response;
 
 import com.google.gson.annotations.SerializedName;

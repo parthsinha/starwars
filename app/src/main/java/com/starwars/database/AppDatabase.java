@@ -12,8 +12,8 @@ import com.starwars.models.response.ResultResponseModel;
 
 public abstract class AppDatabase extends RoomDatabase {
     public static final String DB_NAME = "starWarsDB";
-    private static AppDatabase dbInstance;
     private static final Object LOCK = new Object();
+    private static AppDatabase dbInstance;
 
     public static AppDatabase getInstance(Context context) {
         if (dbInstance == null) {

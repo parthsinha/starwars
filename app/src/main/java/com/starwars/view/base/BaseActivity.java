@@ -1,4 +1,3 @@
-
 package com.starwars.view.base;
 
 import android.content.Context;
