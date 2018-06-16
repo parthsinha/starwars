@@ -1,0 +1,5 @@
+
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(ƒÇƒŞúÿÿÿÿ
+@squid:S2885"&Make "formatter" an instance variable.(Õ¨„úÿÿÿÿ
+;squid:S1172"&Remove these unused method parameters.(³àİ‚
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³àİ‚

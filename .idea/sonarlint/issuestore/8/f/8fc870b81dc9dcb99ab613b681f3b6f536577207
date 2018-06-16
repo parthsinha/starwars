@@ -1,0 +1,4 @@
+
+Isquid:S1068".Remove this unused "DO_LOGGING" private field.(õ…ß8ÙÁý‘À,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(•í·°þÿÿÿÿ8ÙÁý‘À,
+dsquid:UselessImportCheck";Remove this unused import 'javax.net.ssl.X509TrustManager'.(ÂÅ‹Ö8ÙÁý‘À,

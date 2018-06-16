@@ -1,0 +1,6 @@
+
+osquid:S3008"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÈı›ıÿÿÿÿ8µìñ¿,
+\squid:S1444";Make this "public static checkInternetListener" field final(Êşı“ÿÿÿÿÿ8µìñ¿,
+™"squid:ClassVariableVisibilityCheck"aMake checkInternetListener a static final constant or non-public and provide accessors if needed.(Êşı“ÿÿÿÿÿ8µìñ¿,
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8µìñ¿,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8µìñ¿,

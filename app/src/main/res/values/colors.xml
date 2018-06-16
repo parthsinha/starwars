@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_34_34_34">#222222</color>
+    <color name="color_255_255_255">#FFFFFF</color>
+    <color name="color_221_187_0">#DDBB00</color>
+
+    <string-array name="progress_colors_array">
+        <item>@color/colorAccent</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/color_255_255_255</item>
+        <item>@color/color_221_187_0</item>
+    </string-array>
+
+</resources>

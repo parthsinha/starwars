@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="iso_date_format_string_1">yyyy-MM-dd\'T\'HH:mm:ss.SSSSSSS\'Z\'</string>
+    <string name="iso_date_format_string_2">yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</string>
+    <string name="iso_date_format_string_3">yyyy-MM-dd\'T\'HH:mm:ss.SSSSSSS</string>
+    <string name="iso_date_format_string_4">yyyy-MM-dd\'T\'HH:mm:ss</string>
+    <string name="iso_date_format_string_5">MM/dd/yyyy HH:mm:ss</string>
+    <string name="iso_date_format_string_6">MM/dd/yyyy </string>
+    <string name="iso_date_format_string_7">yyyy-MM-dd HH:mm:ss.SSSSSSS</string>
+</resources>

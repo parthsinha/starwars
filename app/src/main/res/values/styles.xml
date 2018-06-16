@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_221_187_0</item>
+        <item name="colorPrimaryDark">@color/color_34_34_34</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/LabelText</item>
+    </style>
+
+    <!-- No Action Bar & Status Bar-->
+    <style name="NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashTheme" parent="NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!-- Label text TextView -->
+    <style name="LabelText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_221_187_0</item>
+        <item name="android:textSize">@dimen/dimension_20</item>
+    </style>
+
+</resources>

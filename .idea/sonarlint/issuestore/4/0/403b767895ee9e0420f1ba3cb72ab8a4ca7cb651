@@ -1,0 +1,6 @@
+
+Psquid:S1066"/Merge this if statement with the enclosing one.(ÂÌ²ùÿÿÿÿ8Ú´ğ¼À,
+Isquid:S1185"(Remove this method to simply inherit it.(²öèÏüÿÿÿÿ8Ú´ğ¼À,
+jsquid:S3008"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ò“Œ8Ú´ğ¼À,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–ıµÅûÿÿÿÿ8Ú´ğ¼À,
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(û¯ÿ÷8Ú´ğ¼À,

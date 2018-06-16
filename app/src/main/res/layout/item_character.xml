@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ItemCharacterBinding">
+
+        <variable
+            name="repo"
+            type="com.starwars.models.response.ResultResponseModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimension_10"
+            app:cardBackgroundColor="@color/color_34_34_34"
+            app:cardCornerRadius="@dimen/dimension_5"
+            app:cardElevation="@dimen/dimension_5">
+
+            <RelativeLayout
+                android:id="@+id/rlContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimension_5">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimension_5"
+                    android:text="@{repo.mName}"
+                    android:textSize="@dimen/font_size_22" />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvName"
+                    android:layout_marginLeft="@dimen/dimension_10"
+                    android:text="@{repo.mGender}"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGender"
+                    android:layout_marginLeft="@dimen/dimension_10"
+                    android:text="@{repo.mHeight+` metres`}"
+                    android:textColor="@color/color_255_255_255"
+                    android:textSize="@dimen/font_size_16" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</layout>
